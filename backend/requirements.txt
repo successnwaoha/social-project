@@ -4,5 +4,5 @@ Flask-Cors
 python-dotenv
 supabase
 paystackease
-hypercorn
+hypercorn  
 gunicorn
