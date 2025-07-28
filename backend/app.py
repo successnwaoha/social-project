@@ -130,6 +130,10 @@ async def verify_payment(reference):
     except Exception as e:
         return jsonify({"error": f"An error occurred: {str(e)}"}), 500
 
+@app.route('/')
+def health_check():
+    """A simple health check to confirm the server is running."""
+    return jsonify({"status": "ok", "message": "Backend server is running!"})
 
 # --- Step 6: The Main Function to Run the Server ---
 async def main():
