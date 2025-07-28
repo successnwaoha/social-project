@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - Boostify</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="auth-container">
+      <h2>Sign Up</h2>
+      <form id="signUpForm">
+        <!-- Username Field -->
+        <div class="form-group">
+          <div class="relative-input-wrapper">
+            <input
+              type="text"
+              id="signUpUsername"
+              name="username"
+              required
+              placeholder=" "
+            />
+            <label for="signUpUsername">Username</label>
+          </div>
+          <div class="error-message" id="signUpUsernameError"></div>
+        </div>
+
+        <!-- Email Field -->
+        <div class="form-group">
+          <div class="relative-input-wrapper">
+            <input
+              type="email"
+              id="signUpEmail"
+              name="email"
+              required
+              placeholder=" "
+            />
+            <label for="signUpEmail">Email</label>
+          </div>
+          <div class="error-message" id="signUpEmailError"></div>
+        </div>
+
+        <!-- Password Field -->
+        <div class="form-group">
+          <div class="relative-input-wrapper">
+            <input
+              type="password"
+              id="signUpPassword"
+              name="password"
+              required
+              placeholder=" "
+            />
+            <label for="signUpPassword">Password</label>
+          </div>
+          <div class="error-message" id="signUpPasswordError"></div>
+        </div>
+
+        <!-- Confirm Password Field -->
+        <div class="form-group">
+          <div class="relative-input-wrapper">
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              required
+              placeholder=" "
+            />
+            <label for="confirmPassword">Confirm Password</label>
+          </div>
+          <div class="error-message" id="confirmPasswordError"></div>
+        </div>
+
+        <button type="submit" class="auth-button">Sign Up</button>
+        <p>Already have an account? <a href="signin.html">Sign In</a></p>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
