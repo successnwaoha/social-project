@@ -1,9 +1,9 @@
-/* Backend Guy*/
-const API_URL = "http://127.0.0.1:5000";
+/* Backend Guy */
+const API_URL = "https://social-project-a7x7.onrender.com"; // I changed this to the live backend URL
 
 document.addEventListener("DOMContentLoaded", () => {
   // --- CONFIGURATION ---
-  const API_URL = "http://127.0.0.1:5000"; // Your backend server address
+  const API_URL = "https://social-project-a7x7.onrender.com"; // Your backend server address
 
   // --- ELEMENT SELECTORS ---
   const signInForm = document.getElementById("signInForm");
